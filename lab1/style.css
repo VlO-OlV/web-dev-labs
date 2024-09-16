@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.left-block {
+  position: relative;
+  width: 30%;
+  height: 800px;
+}
+
+.left-top-block {
+  position: relative;
+  width: 100%-40px;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: aqua;
+}
+
+.left-bottom-block {
+  position: relative;
+  width: 100%-40px;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: blueviolet;
+}
+
+.right-block {
+  position: relative;
+  width: 65%;
+  height: 800px;
+}
+
+.right-block h2 {
+  background-color: white;
+}
+
+.right-top-block {
+  position: relative;
+  width: 100%-40px;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: darkgreen;
+}
+
+.right-middle-block {
+  position: relative;
+  width: 100%-40px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: brown;
+}
+
+.right-bottom-block {
+  position: relative;
+  width: 100%-40px;
+  height: 25%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: chocolate;
+}
+
+.scrollable {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 550px) {
+  .left-block, .right-block {
+    width: 100%;
+  }
+}
