@@ -35,3 +35,5 @@ app.post('/textItems', async (req, res) => {
     res.status(201).json(newTextItem);
   }
 });
+
+module.exports = app;

@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+nav {
+  position: relative;
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.left-block {
+  position: relative;
+  width: 30%;
+  height: 800px;
+}
+
+.left-top-block {
+  position: relative;
+  width: 100%-40px;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: aqua;
+}
+
+.left-bottom-block {
+  position: relative;
+  width: 100%-40px;
+  height: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: blueviolet;
+}
+
+.right-block {
+  position: relative;
+  width: 65%;
+  height: 800px;
+}
+
+.right-block h2 {
+  background-color: white;
+}
+
+.right-top-block {
+  position: relative;
+  width: 100%-40px;
+  height: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0px 20px;
+  background-color: darkgreen;
+}
+
+.right-middle-block {
+  position: relative;
+  width: 100%-40px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  background-color: brown;
+}
+
+.right-bottom-block {
+  position: relative;
+  width: 100%-40px;
+  height: 25%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0px 20px;
+  background-color: chocolate;
+}
+
+.scrollable {
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+@media screen and (max-width: 550px) {
+  .left-block, .right-block {
+    width: 100%;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.glitch-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: #000000;
+}
+
+.glitch {
+  position: relative;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FFFFFF;
+  letter-spacing: 10px;
+  z-index: 1;
+}
+
+.glitch-left, .glitch-right {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.8;
+}
+
+.glitch-left {
+  animation: glitch cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+  animation-duration: 0.5s;
+  color: #00FFFF;
+  z-index: -1;
+}
+
+.glitch-right {
+  animation: glitch cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both infinite;
+  animation-duration: 0.5s;
+  color: #FF00FF;
+  z-index: -2;
+}
+
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
