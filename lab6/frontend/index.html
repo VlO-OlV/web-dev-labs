@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/styles.css">
-  <title>Lab 3</title>
+  <title>Lab 6</title>
 </head>
 <body>
   <main>
@@ -20,18 +20,45 @@
       <div class="right-top-block scrollable">
         <h2>Index</h2>
         <nav>
-          <a href="#">Index</a>
-          <a href="#">Index</a>
-          <a href="#">Index</a>
+          <a href="viewPage.html">Viewpage</a>
+          <a href="viewPage.html">Viewpage</a>
+          <a href="viewPage.html">Viewpage</a>
         </nav>
       </div>
       <div class="right-middle-block scrollable">
-        <img src="https://www.neaq.org/wp-content/uploads/2023/06/shark-1260-bskerry.jpg" alt="">
+        <div class="glitch-form-block">
+          <h3>Create a glitch text element</h3>
+          <form class='glitch-form'>
+            <div class="input-block">
+              <label for="content">Text content:</label>
+              <input type="text" name="content" minlength='1' maxlength='20'>
+            </div>
+            <div class="input-block">
+              <label for="firstColor">First glitchy color:</label>
+              <input type="color" name="firstColor">
+            </div>
+            <div class="input-block">
+              <label for="secondColor">Second glitchy color:</label>
+              <input type="color" name="secondColor">
+            </div>
+            <div class="input-block">
+              <label for="spacing">Letter spacing:</label>
+              <input type="number" name="spacing" min='0' max='10' step='1'>
+            </div>
+            <div class="input-block">
+              <label for="duration">Animation duration:</label>
+              <input type="number" name="duration" min='0.1' max='2' step='0.1'>
+            </div>
+            <button class='glitch-submit' type="submit">Create element</button>
+          </form>
+          <div class="message-block"></div>
+        </div>
       </div>
       <div class="right-bottom-block scrollable">
         <h2>Lorem</h2>
       </div>
     </div>
   </main>
+  <script src='./scripts/index.js'></script>
 </body>
 </html>
